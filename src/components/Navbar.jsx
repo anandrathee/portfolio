@@ -9,7 +9,7 @@ const Navbar = () => {
       <h1 className='text-3xl font-semibold'>Anand.</h1>
       <div className="navLinks flex items-center justify-center gap-16">
         {
-          ["home", "about us", "projects", "contact"].map((elem,index)=>(
+          ["home", "aboutUs", "projects", "contact"].map((elem,index)=>(
             <Link className='font-semibold capitalize hover:text-[#836CD6] transition-all duration-200' to={elem === 'home' ? '/' : `/${elem}`}>{elem}</Link>
           ))
         }

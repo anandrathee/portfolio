@@ -8,3 +8,7 @@
 .homePage{
   height: calc(100vh - 72px)
 }
+
+.aboutPage{
+  height: calc(100vh - 72px)
+}
