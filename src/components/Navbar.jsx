@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="navLinks flex items-center justify-center gap-16">
         {
           ["home", "about us", "projects", "contact"].map((elem,index)=>(
-            <Link className='font-semibold capitalize' to={elem === 'home' ? '/' : `/${elem}`}>{elem}</Link>
+            <Link className='font-semibold capitalize hover:text-[#836CD6] transition-all duration-200' to={elem === 'home' ? '/' : `/${elem}`}>{elem}</Link>
           ))
         }
       </div>
