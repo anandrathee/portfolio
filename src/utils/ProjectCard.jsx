@@ -1,21 +1,22 @@
 import React from 'react'
 
-const ProjectCard = () => {
+const ProjectCard = ({value}) => {
+  const {id, projectType, title, techUsed} = value
   return (
     <div className='w-96 h-[60vh] flex flex-col justify-center overflow-hidden p-6 bg-[#120e12] rounded-4xl text-white relative'>
       <div className="top flex items-center justify-between">
         <div className="topLeft">
-          <h2 className='text-5xl font-bold'>01</h2>
+          <h2 className='text-5xl font-bold'>{id}</h2>
         </div>
         <div className="topRight">
-          <h2 className='text-2xl font-semibold'>Design</h2>
+          <h2 className='text-2xl font-semibold'>{projectType}</h2>
         </div>
       </div>
-      <div className="bottom w-full h-full flex flex-col justify-center gap-2 z-50 ">
-        <h2 className='text-3xl font-bold'>Interface Design <br /> For Ice Creame Shop</h2>
-        <p className='text-2xl font-semibold text-zinc-400'>Technologies used</p>
+      <div className="bottom w-full h-full flex flex-col justify-center gap-2 mt-6 z-50 ">
+        <h2 className='text-3xl font-bold'>{title}</h2>
+        <p className='text-2xl font-semibold text-zinc-400'>{techUsed}</p>
         <p className=' font-semibold text-zinc-500'>HTML, CSS, JavaScript, Gsap, Swiper Js and Figma</p>
-        <div className="img w-full h-40 overflow-hidden  rounded-2xl">
+        <div className="img w-full h-44 overflow-hidden rounded-2xl mt-2">
           <img className='w-full h-full' src="https://www.sydle.com/blog/assets/post/projects-and-processes-what-is-the-difference-614e00a1a9d8415db45a9230/project-and-process.jpg" alt="" />
         </div>
       </div>
