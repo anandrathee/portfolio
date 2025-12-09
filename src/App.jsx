@@ -8,12 +8,9 @@ const App = () => {
   return (
     <div className='w-full h-auto bg-zinc-900'>
       <Navbar/>
-
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='aboutUs' element={<AboutUs/>}/>
+      <Home/>
+      <AboutUs/>
       
-      </Routes>
     </div>
   )
 }

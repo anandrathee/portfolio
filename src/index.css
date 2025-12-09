@@ -1,14 +1,16 @@
 @import "tailwindcss";
 
-
+*{
+  scroll-behavior: smooth;
+}
 .navBar{
    font-family: "Poppins", sans-serif;
 }
 
-.homePage{
+/* .home{
   height: calc(100vh - 72px)
-}
+} */
 
-.aboutPage{
+/* .aboutPage{
   height: calc(100vh - 72px)
-}
+} */
